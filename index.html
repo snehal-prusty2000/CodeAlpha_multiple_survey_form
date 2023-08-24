@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>MultipageSurveyForm</title>
+</head>
+
+<body>
+    <form action="connect.php" class="form" method="post">
+        <h1 class="text-center"> CodeAlpha Survey Form</h1> 
+                          <!--ProgressBar-->
+                      <div class="progressbar">
+                         <div class="progress" id="progress"></div>   
+                         <div class="progress-step progress-step-active" data-title="Intro"></div>
+                         <div class="progress-step" data-title="Contact"></div>
+                         <div class="progress-step" data-title="Id"></div>
+                         <div class="progress-step" data-title="Passward"></div>
+                      </div>
+                              <!--Steps-->
+        <div class="form-step form-step-active">
+            <div class="input-group">
+                <label for="username">yours' Name</label>
+                <input type="text" name="username" id="username" />
+            </div>
+            <div class="input-group">
+                <label for="hearing">How did you hear about the CodeAlpha</label>
+                <input type="text" name="hearing" id="position">
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender:</label>
+                <div>
+                  <lable for="male" class="radio-inline"><input type="radio" name="gender" id="male">Male</lable>
+                  <lable for="female" class="radio-inline"><input type="radio" name="gender" id="female">Female</lable>
+                  <lable for="other" class="radio-inline"><input type="radio" name="gender" id="others">Others</lable>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" />
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="input-group">
+                <label for="dob">DOB</label>
+                <input type="date" name="dob" id="dob" />
+            </div>
+            <div class="input-group">
+                <label for="nid">National ID</label>
+                <input type="number" name="nid" id="id">
+            </div>
+            <div class="input-group">
+                <label for="passward">Password</label>
+                <input type="password" name="passward" id="passward" required />
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Conform Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" required>
+            </div>
+            <div class="Button">
+                <a href="#" class="btn btn-next  width-50 ml-auto">Next</a>
+            </div>
+        </div>
+        
+        <div class="form-step  ">
+            <div class="input-group">
+                <label for="experience">how much Experience on any Company?</label>
+                <input type="text" name="experience" id="position">
+            </div>
+            <div class="input-group">
+                <label for="improvement">What improvement would you like to see on our website?</label>
+                <input type="text" name="improvement" id="improvement">
+            </div>
+            <div class="input-group">
+                <label for="design">How satisfied are you with the overall desogn and layout of our website?</label>
+                <input type="text" name="design" id="position">
+            </div>
+            <div class="input-group">
+                <label for="recomded">How like are you to recommended our website to others ?</label>
+                <input type="text" name="recomded" id="position">
+            </div>
+            <div class="input-group">
+                <label for="reponsive">Rate the responsiveness of our website's across different devices? </label>
+                <input type="text" name="reponsive" id="position">
+            </div>
+            <div class="input-group">
+                <label for="visual">Do you find our website visually appealling?</label>
+                <input type="passward" name="visual" id="passward" >
+            </div>
+            <div class="input-group">
+                <label for="read">Do you regularly  read our blog and article?</label>
+                <input type="passward" name="read" id="conformpassward" >
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev">Previous</a>
+                <a href="#" class="btn btn-next">Next</a>
+            </div>
+        </div>  
+            <div class="form-step ">
+                <div class="input-group">
+                    <label for="follow">Are you follow in Social media?</label>
+                    <input type="text" name="follow" id="position">
+                </div>
+                <div class="input-group">
+                    <label for="passward">How likely are you share our blog content on social media?</label>
+                    <input type="text" name="passward" id="passward"  />
+                </div>
+                <div class="input-group">
+                    <label for="webinars">Have you attend any webinars or online events hosted on our website?</label>
+                    <input type="text" name="webinars" id="conformpassward" >
+                </div>
+                <div class="input-group">
+                    <label for="instruction">Do you find instructional videos or tutorials helpful?</label>
+                    <input type="text" name="instruction" id="passward"  />
+                </div>
+                <div class="input-group">
+                    <label for="social">  Have you reffered our website to others through social media?</label>
+                    <input type="text" name="social" id="conformpassward" >
+                </div>
+                <div class="input-group">
+                    <label for="connect">Do you feel connected to our brand?</label>
+                    <input type="text" name="connect" id="passward"  />
+                </div>
+                <div class="input-group">
+                    <label for="faqsection">Are you aware of our knowledge base or FAQs section?</label>
+                    <input type="text" name="faqsection" id="conformpassward" >
+                </div>
+                <div class="btns-group">
+                    <a href="#" class="btn btn-prev">Previous</a>
+                    <a href="#" class="btn btn-next">Next</a>
+                </div>
+            </div>
+              
+              
+            <div class="form-step ">
+
+                <div class="input-group">
+                    <label for="policy">Have you read our privacy policy and terms of use ?</label>
+                    <input type="text" name="policy" id="position">
+                </div>
+                <div class="input-group">
+                    <label for="feedback">How likely are you to provide feedback if you encounter an issue on our website?</label> 
+                    <input type="text" name="feedback" id="position">
+                </div>
+                <div class="input-group">
+                    <label for="suggesst">Have you ever submitted suggestions? </label>
+                    <input type="text" name="suggesst" id="position">
+                </div>
+                <div class="input-group">
+                    <label for="improve">How like are you to partipate in user testing or surveys to help us improve? </label>
+                    <input type="text" name="improve" id="position">
+                </div>
+                <div class="input-group">
+                    <label for="dedicate">Would you like to see a dedicated feedback section on our website ?</label>
+                    <input type="text" name="dedicate" id="position">
+                </div>
+                <div class="input-group">
+                    <label for="think">What words come to mind when you think about our website?</label>
+                    <input type="text" name="think" id="position">
+                </div>
+                    
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previous</a>
+                        <input type="submit" value="Submit" class="btn">
+                    </div>
+            </div>
+    </form>
+</body>
+
+</html>
